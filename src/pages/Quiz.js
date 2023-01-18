@@ -8,13 +8,13 @@ export default function Quiz() {
   const [optionChosen, setOptionChosen] = useState("");
 
   const nextQuestion = () => {
-    if (Questions[currQuestion].asnwer === optionChosen) {
+    if (Questions[currQuestion].answer === optionChosen) {
       setScore(score + 1);
     }
     setCurrQuestion(currQuestion + 1);
   };
   const finishQuiz = () => {
-    if (Questions[currQuestion].asnwer === optionChosen) {
+    if (Questions[currQuestion].answer === optionChosen) {
       setScore(score + 1);
     }
     setGameState("endScreen");
